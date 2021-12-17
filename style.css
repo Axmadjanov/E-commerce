@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.cards {
+  width: 100%;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  height: auto;
+}
+.card {
+  border-radius: 8px;
+  width: 100%;
+  height: 650px;
+  box-shadow: 8px 15px 9px #111;
+}
+.text {
+  width: 100%;
+  height: auto;
+}
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: 40%;
+}
+.card p {
+  margin: 10px;
+}
