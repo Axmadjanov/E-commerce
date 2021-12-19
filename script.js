@@ -1,15 +1,16 @@
 const cards = document.getElementById("cards");
 const card = document.getElementById("card");
+const Form = document.getElementById("form");
+const SignUp = document.getElementById("SignUp");
+const containerForm = document.querySelector(".container-form");
 
 function markUp(image, description, title, price) {
   return `
 <div class="card"  >
 <img src="${image}"/>
 <div class="text" >
-<p>${title} </p>
-<br/>
+<p>${title}</p>
 <p> ${description}  </p>
-<br/>
 <p>$${price}  </p></div>
 </div>
     `;
@@ -26,3 +27,23 @@ fetch("https://fakestoreapi.com/products")
       )
     );
   });
+
+SignUp.addEventListener("click", () => {
+  containerForm.classList.remove(".hidden");
+  console.log("hi");
+});
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const email = document.getElementById("email");
+const submit = document.getElementById("submit");
+
+let isUserLoggedIn = window.localStorage.getItem("isUserLoggedIn");
+
+function signUp() {
+  window.localStorage.setItem("isUserLoggedIn", true);
+  isUserLoggedIn = true;
+  console.log("hi");
+  username.value = "";
+  password.value = "";
+  email.value = "";
+}
