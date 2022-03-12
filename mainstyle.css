@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*teacher Cards */
+.teachers {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container h3 {
+  margin: 10px 0;
+}
+
+.card-container h6 {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.card-container p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-container {
+  background-color: #231e39;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding-top: 30px;
+  position: relative;
+  margin: 0 20px;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-container .pro {
+  color: #231e39;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.card-container .skills {
+  border-radius: 10px;
+  background-color: #1f1a36;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.card-container .skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container .skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+}
+/* Cards */
+/* Navbar */
+.navbar {
+  background: #03bfcb;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.top {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.logo {
+  font-size: 20px;
+  color: #fff;
+}
+/* Navbar */
+/* Teachers Page */
+.containerOqtuvchi {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.oqtuvchiHaqida {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 400px;
+}
+.imageCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oqtuvchiHaqida img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 70%;
+  height: 400px;
+  object-fit: fill;
+}
+.oqituvchiMalumot {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/* Teachers Page */
+@media only screen and (max-width: 850px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  /*teacher Cards */
+  .teachers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .card-container h3 {
+    margin: 10px 0;
+  }
+
+  .card-container h6 {
+    margin: 5px 0;
+    text-transform: uppercase;
+  }
+
+  .card-container p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .card-container {
+    background-color: #231e39;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    color: #b3b8cd;
+    padding-top: 30px;
+    position: relative;
+    margin: 10px 20px;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .card-container .pro {
+    color: #231e39;
+    background-color: #febb0b;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .card-container .round {
+    border: 1px solid #03bfcb;
+    border-radius: 50%;
+    padding: 7px;
+  }
+
+  .card-container .skills {
+    border-radius: 10px;
+    background-color: #1f1a36;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  .card-container .skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-container .skills ul li {
+    border: 1px solid #2d2747;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+  }
+  /* Cards */
+  /* Navbar */
+  .navbar {
+    margin-bottom: 30px;
+    background: #334041;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .bar {
+    position: relative;
+    right: 45px;
+    cursor: pointer;
+  }
+  .logo {
+    position: relative;
+    left: 45px;
+    font-size: 25px;
+    color: #fff;
+  }
+  /* Navbar */
+  /* LeftNavbar */
+  .leftNavbar {
+    background: #334041;
+    height: 100%;
+    width: 70%;
+  }
+  .leftNavbar .top {
+    padding: 10px 60px;
+  }
+  .leftCotainer {
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.19s ease;
+  }
+  .shadowNav {
+    width: 30%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .hidden {
+    display: none;
+    /* transform: translateX(-500px); */
+  }
+  .logo1 {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+  .otherPages {
+    width: 100%;
+  }
+  .otherPages li {
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    /* margin: 15px 0; */
+  }
+  .otherPages li:hover {
+    background: #475455;
+  }
+  /* LeftNavbar */
+  /* Teachers Page */
+  .containerOqtuvchi {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .oqtuvchiHaqida {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .oqtuvchiHaqida img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+  }
+  .oqituvchiMalumot {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  /* Teachers Page */
+}
